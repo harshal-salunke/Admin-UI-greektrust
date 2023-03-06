@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Admin UI</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Admin UI</h1>
+      <div class="row mb-3">
+        <div class="col-sm-6">
+          <input type="text" class="form-control" placeholder="Search..." />
+        </div>
+        <div class="col-sm-6">
+          <button
+            type="button"
+            class="btn btn-danger float-right"
+            id="delete-selected"
+          >
+            Delete Selected
+          </button>
+        </div>
+      </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th><input type="checkbox" id="select-all" /></th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Role</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="users"></tbody>
+      </table>
+      <nav aria-label="Page navigation">
+        <ul class="pagination">
+          <li id="first-page"><a class="page-link" href="#">First</a></li>
+          <li id="prev-page"><a class="page-link" href="#">Previous</a></li>
+          <li id="page-num"><a class="page-link" href="#"></a></li>
+          <li id="next-page"><a class="page-link" href="#">Next</a></li>
+          <li id="last-page"><a class="page-link" href="#">Last</a></li>
+        </ul>
+      </nav>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>Admin UI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Admin UI</h1>
+      <div class="toolbar">
+        <div class="search">
+          <input type="text" placeholder="Search..." />
+        </div>
+        <div class="actions">
+          <button id="delete-selected">Delete Selected</button>
+        </div>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th><input type="checkbox" id="select-all" /></th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Role</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="users"></tbody>
+      </table>
+      <div class="pagination">
+        <button id="first-page">First</button>
+        <button id="prev-page">Prev</button>
+        <span id="page-num"></span>
+        <button id="next-page">Next</button>
+        <button id="last-page">Last</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html> -->
